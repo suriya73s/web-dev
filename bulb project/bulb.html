@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>💡Bulb Project</title>
+</head>
+
+<style>
+body
+{
+    background-color: rgb(116, 130, 143);
+    transition: background-color 2s ease;
+}
+img
+{
+    width: 150px;
+}
+.content
+{   display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+}
+.htag
+{
+    color: white;
+    transition: color 2s ease;
+}
+.but 
+{   padding-left: 10px;
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+   letter-spacing: 1px;
+    
+}
+</style>
+
+<body >
+    <h1 style="text-align: center;" id="h3" class="htag">- 💡Bulb Project -</h1>
+
+    <div class="content">
+    <img id="bulb" src="image/bulboff.gif" alt="Error">
+    <br>
+    <div class="but">
+    <input type="checkbox" id="checkbox" class="checkedbox">
+    <h3 id="hchange" class="htag">ON</h3>
+    </div>
+    </div>
+
+   
+    <script>
+    document.getElementById('checkbox').addEventListener('change', function() {
+    
+        const bulb = document.getElementById('bulb');
+        const bd = document.body;
+        const h = document.getElementById('h3');
+        const hchange = document.getElementById('hchange');
+
+    if (this.checked) {
+        bulb.src = "image/bulbon.gif";
+        bd.style.backgroundColor = "rgb(198, 209, 135)";
+        h.style.color = "black";
+        hchange.style.color = "black";
+        hchange.textContent = "ON";
+    } else {
+        bulb.src = "image/bulboff.gif";
+        bd.style.backgroundColor = "rgb(116, 130, 143)";
+        h.style.color = "white";
+        hchange.style.color = "white";
+        hchange.textContent = "OFF";
+    }
+});
+    </script>
+
+    
+
+   
+</body>
+</html>
