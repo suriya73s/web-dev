@@ -1,0 +1,246 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color: rgba(136, 243, 207, 0.719);
+}
+.top
+{
+    height: 50px;
+    width: 90%;
+    background-color: rgba(0, 255, 149, 0.233);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin:20px auto;
+
+}
+.top i
+{
+margin-left: 10PX;
+color: rgb(2, 126, 68);
+}
+
+                /* logo part */
+         
+.logo
+{
+    display: flex;
+    width: 90%;
+    margin:0px auto;
+} 
+.welcome i
+{
+    margin-top: 10px;
+}               
+.logo img
+{
+    width: 48px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+                /* earning box */
+
+.mini-container
+{
+    background-color: rgba(2, 126, 68, 0.705);
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}  
+.total-money
+{
+    text-align: center;
+    flex-basis: 90%;
+}            
+.total-money div
+{
+    display: flex;
+    justify-content: center;
+}
+.total-money div i
+{
+    margin-top: 5px ;
+    margin-right: 5px;
+}
+.total-cash
+{
+    flex-basis: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13px;
+    margin-top: 20px;
+}
+.total-cash div
+{
+    display: flex;
+    justify-content: center;
+}
+.total-cash div i
+{
+    margin-top: 5px ;
+    margin-right: 5px;
+}
+
+/* four ICONS */
+
+.four-icon
+{
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+    justify-content: space-around;
+    text-align: center;
+}
+.icons
+{
+    flex-basis: 22%;
+    cursor: pointer;
+}
+.icons i
+{
+    font-size: 23px;
+    color: rgba(2, 126, 68, 0.993);
+    margin-bottom: 10px;
+}
+
+/* DEPT _ WITH */
+
+.dep-with
+{
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+.deposit
+{
+    background-color: rgba(2, 126, 68, 0.349);
+    flex-basis: 35%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.deposit div
+{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(5, 4, 4);
+    align-items: center;
+}
+.deposit div i
+{
+    color: rgba(2, 82, 44, 0.993);
+    font-size: 25px;
+}
+
+/* Pakage */
+.product
+{
+    width: 100%;
+    background-color: rgba(147, 179, 164, 0.349);
+    border-radius: 10px;
+    padding: 1px 0px;
+}
+.tittle
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 35px;
+}
+.tittle a
+{
+    text-decoration: none;
+    color: #555454;
+}
+.pakage
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: rgb(249, 252, 251);
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.pak-top
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+}
+.pak-top h3
+{
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.pak-top h3 small
+{
+    background-color: #cccccc75;
+    font-size: 10px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.pak-top p small
+{
+    color: #555252;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.pak-top button
+{
+    height: 30px;
+    width: 60px;
+    background-color: rgba(46, 172, 113, 0.993);
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.pakage hr
+{
+    height: 1px;
+    border: none;
+    background-color: rgba(102, 99, 99, 0.555);
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.pak-bottom
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.amount
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.amount p
+{
+    margin-bottom: 10px;
+    color: #555252;
+}
+.amount h2
+{
+    font-size: 20px;
+    font-weight: normal;
+}
+.amount i
+{
+    font-size: 16px;
+    margin-right: 5px;
+    border: none;
+}
