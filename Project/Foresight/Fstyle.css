@@ -125,7 +125,7 @@ color: rgb(2, 126, 68);
 .deposit
 {
     background-color: rgba(2, 126, 68, 0.349);
-    flex-basis: 35%;
+    flex-basis: 40%;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -141,6 +141,13 @@ color: rgb(2, 126, 68);
 {
     color: rgba(2, 82, 44, 0.993);
     font-size: 25px;
+}
+@media  screen and (max-width:400px) 
+{.deposit
+    {
+        flex-basis: 35%;
+    }
+    
 }
 
 /* Pakage */
