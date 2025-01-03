@@ -1,0 +1,62 @@
+*
+    {
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+        background-color: rgb(40, 42, 53);
+    }
+    .top
+    {
+    background: linear-gradient(to top,rgb(80, 153, 236),rgb(104, 245, 111));
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    }
+    .wimg
+    {
+        margin-bottom: 70px;
+    }
+    .content
+    {
+        color: rgb(241, 234, 225);
+        margin-top:100px;
+        margin-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content h2
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .content ul
+    {
+        list-style: none;
+    }
+    .content ul li
+    {
+        margin-bottom: 20px;
+    
+    }
+    /* second div */
+
+    .mobile
+    {
+        margin-top: 300px;
+    }
+
+    /* login form */
+    .login-page
+    {
+        height: 100px;
+        width: 100px;
+        background-color:#ccc;
+    }
