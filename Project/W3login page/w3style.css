@@ -158,3 +158,10 @@
 {
     width: 8px;
 }
+/* help */
+.help
+{
+    background-color:rgb(3, 156, 3);
+    color: white;
+    padding: 10px;
+}
