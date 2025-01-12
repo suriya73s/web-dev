@@ -20,17 +20,20 @@
     justify-content: center;
     color: white;
     }
+   
+
     .wimg
     {
         margin-bottom: 70px;
     }
+
     .content
     {
         color: rgb(241, 234, 225);
         display: flex;
-        margin: 100px auto 50px ;
+        margin: 50px auto 50px ;
         flex-wrap: wrap;
-        width: 65%;
+        width: 90%;
         align-items: center;
         justify-content: space-around;
         /* background-color: rgb(83, 85, 85); */
@@ -75,7 +78,7 @@
     {
         color: black;
         padding: 20px;
-        width: 450px;
+        width: 400px;
         border: 1px solid black;
         margin:  50px;
         background-color: aliceblue;
@@ -119,6 +122,7 @@
         border: 1px solid #ccc;
         padding: 13px;
         border-radius: 7px;
+        cursor: pointer;
 }
 .input
 {
@@ -132,6 +136,7 @@
         padding: 13px;
         margin-bottom: 10px;
         border-radius: 7px;
+        outline: none;
 }
 .button
 {
@@ -159,9 +164,202 @@
     width: 8px;
 }
 /* help */
+
 .help
 {
     background-color:rgb(3, 156, 3);
     color: white;
     padding: 10px;
+    border-radius: 20px;
+    border: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    display: block;
+}
+
+/* Footer */
+
+.Footer
+{
+    margin: 100px auto;
+    width:85% ;
+    color: white;
+}
+.ast-img
+{
+    position: absolute;
+    bottom: -520px;
+    right: 150px;
+}
+.ast-img-foot
+{
+    display: none;
+}
+.Footer p
+{
+    font-size: 13px;
+    width: 620px;
+    font-weight: none;
+}
+.Footer p a
+{
+    color: white;
+}
+.icons
+{
+    margin: 20px 0px;
+}
+.icons i
+{
+    margin-right: 10px;
+    font-size: 21px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons i:hover
+{
+    transform: translateY(-7px);
+}
+
+
+
+.mini-help
+{
+    background-color:rgb(3, 156, 3);
+    color: white;
+    padding: 10px;
+    border-radius: 100%;
+    border: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+    border: 0.5px solid #ccc;
+}
+
+@media screen and (max-width:770px)
+{
+   .top
+   {
+    background: linear-gradient(to top,rgb(80, 153, 236),rgb(104, 245, 111));
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0px;
+   }  
+   .top p
+   {
+       width: 250px;
+   }
+   .content
+   {
+       color: rgb(241, 234, 225);
+       display: flex;
+       margin: 50px auto ;
+       flex-wrap: wrap;
+       /* background-color: rgb(83, 85, 85); */
+   }
+   .image
+   {
+    display: none;
+   }
+   .mini-content
+   {
+       flex-basis: 100%;
+   }
+   .wimg
+   {
+    display: none;
+   }
+   .mini-content h1,h2 
+   {
+    text-align: center;
+   }
+   .mini-content ul
+   {
+    text-align: center;
+   }
+   /* login page */
+   .login-page
+   {   
+    flex-basis: 100%;
+   }
+   .form
+   {
+       color: black;
+       padding: 10px;
+       width:95%;
+       border: 1px solid black;
+       margin:  50px 0px;
+       background-color: aliceblue;
+       border: none;
+       border-radius:10px ;
+       height: 500px;
+       display: flex;
+       flex-direction: column;
+       -webkit-border-radius:10px ;
+       -moz-border-radius:10px ;
+       -ms-border-radius:10px ;
+       -o-border-radius:10px ;
+}
+
+.button button
+{
+   width: 100px;
+   height: 50px;
+   font-size: 12px;
+    padding: 12px;
+}
+
+/* footer */
+.Footer p
+{
+    font-size: 10px;
+    width: 230px;
+    font-weight: none;
+    text-align: center;
+    margin:0px auto 20px;
+    line-height: 13px;
+}
+.ast-img
+{
+    display: none;
+}
+.ast-img-foot
+{
+    position: absolute;
+    width: 300px;
+    margin-top: 50px auto ;
+    display: block;
+    
+}
+.icons
+{
+    text-align: center;
+}
+.footer-img
+{
+   margin: auto 35%;
+}
+.help
+{
+    display: none;
+}
+.mini-help
+{
+    display: block;
+}
 }
