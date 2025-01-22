@@ -3,49 +3,73 @@
 <head>
     <title>Document</title>
 </head>
-<body>
-    <center>
-        <h1>Erroe Makes Clever Academy 🚀</h1>
-        <h3>Traing | Tech | Fresheer</h3>
-        <p>Emproving young developement uptheir level up therir slill trainging sofgtware developement Technologies</p>
-        <hr>
-            </center>
-            <center>
+<body bgcolor="#ccc">
+    
+       
+            
                 <h1>Register form</h1>
                 <form action="">
                     <table>
                         <tr>
-                            <td>Name</td><td><Input type="text" placeholder="Enter Name"></td>
+                            <td>Name</td><td><Input type="text" id="name" placeholder="Enter Name"></td>
                         </tr>
                         <tr>
-                            <td>Age</td><td><Input type="number" placeholder="Enter Age"></td>
+                            <td>Age</td><td><Input type="number" id="age" placeholder="Enter Age"></td>
                         </tr>
                         <tr>
-                            <td>Gender</td><td><Input type="radio" name="gender"><label>Male</label><Input type="radio" name="gender"><label>Feamle</label></td>
+                            <td>Gender</td><td><Input type="radio" value="male" name="gender"><label>Male</label><Input type="radio" name="gender"><label>Feamle</label></td>
                         </tr>
                         <tr>
                             <td>Select a Course</td>
                             <td>
-                            <select name="" id="">
+                            <select name="" id="course">
                                 <option value="">Full stack</option>
                                 <option value="">Pyhton</option>
                                  <option value="">Java</option>
                             </select>
                             </td>
                         </tr>
-                        <tr>
-                            <td>Upload you Resume</td><td><Input type="file" placeholder="Enter Name"></td>
-                        </tr>
+                        
                         <tr>
                             <tr>
-                                <td><input type="submit"></td><td><input type="reset"></td>
+                                <td></td><button>save</button>
                             </tr>
                         </tr>
 
                     </table>
                 </form>
-                <hr>
-                <a href="tutorial.html">Home</a> | <a href="">Instagram</a> | <a href="">Youtube</a>
-            </center>
+                <br>
+                <br>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Course</th>
+                    </tr>
+                </table>
+
+                <script>
+                    var name = document.getElementById("name")
+                    var age = document.getElementById("age")
+                    var course = document.getElementById("course")
+function fun()
+{
+                //     var gender = document.getElementsByName("gender")
+                //     var selectgender;
+                //     for(let i = 0; i < gender.length; i++)
+                // {
+                //     if (gender[i].checked == true)
+                //      {
+                //         selectgender = gender[i].value;
+                //        console.log(selectgender)  
+                //        break;  
+                //     }
+                // }
+                console.log("selectgender")  
+}
+
+                </script>
+                
 </body>
 </html>
