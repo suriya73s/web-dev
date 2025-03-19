@@ -1,87 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<body bgcolor="#ccc">
-    
+
+<style>
+    *
+    {
+        background-color: #ccc;
+    }
+   input 
+    {
+      
        
+    }
+</style>
+
+<body>
+    <div class="col-sm-4">
+        <h4>Enter the value to add</h4>
+        <input type="text" name="" value="" maxlength="10" id="input_value">
+        <button>Add</button>
+    </div>
+    <div class="col-sm-4">
+        <h4>added list</h4>
+        <div class="list-ad">
+               <input type="checkbox" value="Java"><label>Java</label>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <h4>Selected list</h4>
+        <ul class="selected-list">
+            <li>java</li>
+        </ul>
+    </div>
+
+    <script>
+        var input = document.getElementById("input_value")
+        var list = document.querySelector(".list");
+        var selected = document.querySelector(".selected-list")
+
+        function addfun()
+        {
             
-   <h1>Register form</h1>
-       <table>
-           <tr>
-               <td>Name</td><td><Input type="text" id="name" placeholder="Enter Name"></td>
-           </tr>
-           <tr>
-               <td>Age</td><td><Input type="number" id="age" placeholder="Enter Age"></td>
-           </tr>
-           <tr>
-               <td>Gender</td><td><Input type="radio" value="male" name="gender"><label>Male</label><Input type="radio" value="Female" name="gender"><label>Female</label></td>
-           </tr>
-           <tr>
-               <td>Select a Course</td>
-               <td>
-               <select name="" id="course">
-                   <option value="Full stack">Full stack</option>
-                   <option value="Pyhton">Pyhton</option>
-                    <option value="Java">Java</option>
-               </select>
-               </td>
-           </tr>
-           
-           <tr>
-               <tr>
-                   <td><button onclick="create()">save</button></td>
-               </tr>
-           </tr>
-
-       </table>
-  
-   <br>
-   <br>
-   <table>
-       <tr>
-           <th>Name</th>
-           <th>Age</th>
-           <th>Gender</th>
-           <th>Course</th>
-           
-       </tr>
-   </table>
-   <script>
-       var name = document.getElementById("name")
-       var age = document.getElementById("age")
-       var course = document.getElementById("course")
-
-        var gender = document.getElementsByName("gender")
-        var selectgender;
-        for(let i = 0; i < gender.length; i++)
-    {
-        if (gender[i].checked == true)
-         {
-            selectgender = gender[i].value;
-           console.log(selectgender)  
-           break;  
         }
-    }
-   
-    function create()
-    {
-      var newtr = document.createElement("tr")
-      var newtd1 = document.createElement("td")
-      var newtd2 = document.createElement("td")
-      var newtd3 = document.createElement("td")
-      var newtd4 = document.createElement("td")
-      newtd1.textContent = name.value;
-      newtd2.textContent = age.value;
-      newtd3.textContent = selectgender;
-      newtr4.textContent = course.value;
+    </script>
 
-      newtr.innerHTML = "newtd1,newtd2,newtd3,newtd4"
-    }
-   </script>
-   
 </body>
 </html>

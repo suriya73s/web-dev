@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .image
+    {
+        border: 1px solid black;
+        height: 100px;
+        width: 100px;
+    }
+
+    .imags
+    {
+        height: 100px;
+        width: 100px;
+    }
+</style>
+
+<body bgcolor="#ccc">
+    <input type="file" id="file">
+    <br><br>
+    <button onclick=" change()" >Click</button>
+    <br><br>
+    <div class="image">
+        <img class="imags" src="img.png" alt="" id="imag">
+    </div>
+
+    <script>
+        function change()
+        {
+            var file = document.getElementById("file");
+            var imag = document.getElementById("imag");
+            file.value.files[0];
+            console.log(file.value)
+            imag.src= file.src;
+        }
+    </script>
+</body>
+</html>

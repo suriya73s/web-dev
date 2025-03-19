@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<style>
+td, tr,table,th
+{
+    border: 1px solid black;
+}
+</style>
+
+<body bgcolor="#ccc">
+    
+       
+            
+   <h1>Register form</h1>
+       <table >
+           <tr>
+               <td>Name</td><td><Input type="text" id="name" placeholder="Enter Name"></td>
+           </tr>
+           <tr>
+               <td>Age</td><td><Input type="number" id="age" placeholder="Enter Age"></td>
+           </tr>
+           <tr>
+               <td>Gender</td><td><Input type="radio" value="male" name="gender"><label>Male</label><Input type="radio" value="Female" name="gender"><label>Female</label></td>
+           </tr>
+           <tr>
+               <td>Select a Course</td>
+               <td>
+               <select name="" id="course">
+                   <option value="Full stack">Full stack</option>
+                   <option value="Pyhton">Pyhton</option>
+                    <option value="Java">Java</option>
+               </select>
+               </td>
+           </tr>
+           
+           <tr>
+               <tr>
+                   <td><button onclick="create()">save</button></td>
+               </tr>
+           </tr>
+
+       </table>
+  
+   <br>
+   <br>
+   <table id="tble">
+       <tr >
+           <th>Name</th>
+           <th>Age</th>
+           <th>Gender</th>
+           <th>Course</th>
+           
+       </tr>
+   </table>
+   
+   <script>
+       
+       
+   
+    function create()
+    {  
+        var name = document.getElementById("name")
+       var age = document.getElementById("age")
+       var course = document.getElementById("course")
+
+
+      var newtr = document.createElement("tr")
+      var gender = document.getElementsByName("gender")
+        var selectgender;
+        for(let i = 0; i < gender.length; i++)
+    {
+        if (gender[i].checked )
+         {
+            selectgender = gender[i].value;
+           console.log(selectgender)  
+           break;  
+        }
+    }
+    
+    document.getElementById("tble").insertAdjacentElement("beforeend",newtr)
+      
+    newtr.innerHTML = `<td>${name.value}</td><td>${age.value}</td><td>${selectgender}</td><td>${course.value}</td>`
+
+    }
+   </script>
+   
+</body>
+</html>

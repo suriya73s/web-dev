@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN"
+"http://www.wapforum.org/DTD/wml12.dtd">
+<wml>
+<card id="card1" title="Home">
+<p>
+Welcome to the WML Event Example!
+</p>
+<p>
+<anchor>
+<go href="#card2"/>
+Next Page</anchor> m
+</p>
+</card>
+<card id="card2" title="Card 2">
+<onevent type="onenterforward">
+<go href="#card3"/>
+</onevent>
+<onevent type="onenterbackward">
+<go href="#card1"/>
+</onevent>
+<p>
+This card automatically navigates to Card 3 when entered forward.
+</p>
+<p>
+<anchor>
+<prev/>
+Go Back to Home        
+</anchor>
+</p>
+</card>
+<card id="card3" title="Card 3">
+<onevent type="ontimer">
+<go href="#card4"/>
+</onevent>
+<timer value="50"/>
+<p>
+Timer in action! Wait for some seconds!
+</p>
+<p>
+<anchor>
+<go href="#card1"/>
+go to Home
+</anchor>
+</p>
+</card>
+<card id="card4" title="Card 4">
+<p>
+Select an option to learn about WML:
+</p>
+<p>
+<select>
+<option onpick="#card5">Learn WML Basics</option>
+<option onpick="#card6">Learn WML Features</option>
+</select>
+</p>
+<p>
+<anchor>
+<go href="#card1"/>
+go to Home
+</anchor>
+</p>
+</card>
+<card id="card5" title="WML Basics">
+<p>
+<b>the wml is what?</b><br/>
+WML is Wireless Markup Language. it is a markup language.it is used for mobile devices
+</p>
+<p>
+<b>Key Points:</b>
+<ul>
+<li>WML is lightweight.</li>
+<li>It used for mainly mobile devices that are less in market.</li>
+<li>It is based on xml.</li>
+</ul>
+</p>
+<p>
+<anchor>
+<go href="#card1"/>
+go to Home
+</anchor>
+</p>
+</card>
+<card id="card6" title="WML Features">
+<p>
+<b>Features of WML:</b><br/>
+</p>
+<p>
+<ul>
+<li>it has event Handling</li>
+<li>it used onpick to select option</li>
+<li>it is very Extensibility</li>
+<li>decks and cards</li>
+</ul>
+</p>
+<p>
+<anchor>
+<go href="#card1"/>
+go to Home
+</anchor>
+</p>
+</card>
+</wml>
+
+
+

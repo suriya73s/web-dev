@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .screen
+    {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .screen input
+    {
+        text-align: right;
+        height: 60px;
+        width: 200px;
+        border-top-left-radius: 5px;
+        border-top-right-radius:5px;
+        border: none;
+        border-bottom: 2px solid black;
+       font-size: 30px;
+
+    }
+    .cal
+    {
+        height: 320px;
+        width: 200px;
+        border: 1px solid black;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: inset;
+        box-shadow: 1px 1px 10px rgb(110, 95, 95);
+    }
+    .bts
+    {
+        width: 200px;
+        height: 260px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+         background-color: rgb(255, 255, 255);
+    }
+    .bts button
+    {   flex-basis: 20%;
+        margin: 5px;
+        height: 40px;
+        width: 40px;
+        border: 1px solid  rgb(0, 0, 0);
+        padding: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 1px 1px 4px;
+        transition: 0.5s;
+    }
+    .bts button:hover
+    {
+        box-shadow: 1px 1px 2px;
+    }
+</style>
+
+<body bgcolor="#ccc" >
+    <div class="cal">
+        <div class="screen">
+            <input type="text" placeholder="" id="result">
+        </div>
+        <div class="bts">
+            <button onclick="clearfun()">C</button>
+            <button onclick="delfun()">Del</button>
+            <button onclick="fun(event)">*</button>
+            <button onclick="fun(event)">-</button>
+            <button onclick="fun(event)">7</button>
+            <button onclick="fun(event)">8</button>
+            <button onclick="fun(event)">9</button>
+            <button onclick="fun(event)">+</button>
+            <button onclick="fun(event)">4</button>
+            <button onclick="fun(event)">5</button>
+            <button onclick="fun(event)">6</button>
+            <button onclick="fun(event)">/</button>
+            <button onclick="fun(event)">1</button>
+            <button onclick="fun(event)">2</button>
+            <button onclick="fun(event)">3</button>
+            <button onclick="fun(event)">.</button>
+            <button onclick="fun(event)" style="flex-grow: 2;">0</button>
+            <button onclick="resultfun()" >=</button>   <!--style="margin-left: 155px;" -->
+        </div>
+    </div>
+    <script>
+        var input = document.getElementById("result");
+       function fun(event)
+       {
+        
+        input.value += event.target.textContent;
+       } 
+       var output;
+       function resultfun()
+       {    
+            output = input.value;
+            console.log(window.output(input.value))
+            
+       }
+       function delfun()
+       {
+        
+       }
+       function clearfun()
+       {
+            input.value = "" ;
+       }
+    </script>
+</body>             
+</html>
