@@ -1,0 +1,348 @@
+    *
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    body
+    {
+        background-color: #ccc;
+    }
+    #home
+    {
+        background:linear-gradient(to Bottom,rgba(0, 0, 0, 0.041),rgb(9, 180, 247)), url(car.png);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+.logo
+{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-weight: bold;
+}
+.content
+{
+    text-align: center;
+    padding-top: 200px;
+}
+.content h1
+{
+    font-size: 100px;
+}
+.content p
+{
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(201, 34, 34);
+}
+.home-but
+{
+    margin-top: 30px;
+   padding: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    margin: auto;
+}
+.home-but button
+{
+    background-color:transparent;
+    width: 140px;
+    height: 50px;border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: large;
+    display: block;
+    position: relative;
+    color: white;
+    margin: 20px;
+    z-index: 1;
+    transition: 0.5s;
+}
+.home-but button span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    transition: 1s;
+    z-index: -1;
+}
+.home-but button:hover span
+{
+    width: 100%;
+}
+
+.home-but button:hover
+{
+    color:black ;
+}
+
+/* Side nav controls */
+
+#sidenav
+{
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0px;
+    right: -250px;
+    background-color: aquamarine;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul
+{
+    margin-top: 100px;
+}
+#sidenav nav li
+{
+    list-style-type: none;
+    margin: 30px 20px;
+}
+#sidenav nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.menu-but
+{   
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    z-index: 3;
+    background-color: aquamarine;
+    border-radius: 5px;
+    display: none;
+}
+.menu-but button
+{
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    font-size: 30px;
+    background: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+            /* Nav bar fixed */
+
+.navbar
+{
+    position: fixed;
+    top: 0;
+    background-color: aqua;
+    width: 100%;
+
+}
+.navbar ul
+{
+    display: flex;
+    justify-content: end;
+    padding: 15px 10px;
+}
+.navbar ul li{
+    list-style-type: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px)
+ {
+.menu-but
+{
+    display: block;
+}
+.navbar
+{
+    display: none;
+} 
+.content h1
+{
+    font-size: 80px;
+} 
+.content p
+{
+    font-size: 17px;
+}
+.home-but
+{
+  flex-direction: column;
+}
+.home-but button
+{
+    margin: 15px auto;
+}
+}
+
+            /* Features section */
+
+
+.title-topic
+{
+    text-align: center;
+    padding: 30px 0px;
+}
+.title-topic h3
+{
+    margin-bottom: 10px;
+    color: rgb(255, 5, 5);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.title-topic h3::after
+{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.068),rgb(255, 102, 0));
+    position: absolute;
+    top: -9px;
+    left: 0px;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.title-topic h1
+{
+  color: black;
+  font-size: 30px;
+}
+
+            /* FEATURE BOX */
+
+
+.feature-box
+{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.feature
+{
+    flex-basis: 50%;
+    
+}
+.feature-img
+{
+    flex-basis: 50%;
+}
+.feature-img img
+{
+    height: 600px;
+}
+.feature h1
+{
+    color: aqua;
+    text-align: left;
+    margin-bottom: 20px ;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.feature-des
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+.feature-icon i
+{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.feature-des p
+{
+    text-align: start;
+}
+@media screen and (max-width:700px) {
+    .feature-box
+{
+    width: 90%;
+}
+.feature-des
+{
+    margin-left: 10px;
+}
+.feature h1
+{
+    margin-left: 10px;
+}
+    .feature
+{
+    flex-basis: 50%;
+    flex-grow: 1;
+    
+}
+.feature-img
+{
+   flex-grow: 1;
+}
+.feature-img img
+{
+    width:250px;
+    height: 350px;
+    margin:20px;
+}
+}
+
+        /* SERVICE CONTAINER SECTION */
+
+#service
+{
+    height: 100vh;
+    margin-top: 40px;
+}
+.service-container
+{
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ser-box
+{
+    flex-basis: 40%;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+}
+.ser-box img 
+{
+    width: 95%;
+    height: 250px;
+    margin-top: 6px;
+    z-index: 1;
+}
+.ser-box span
+{   position: absolute;
+    left: 17px;
+    width: 95%;
+    height: 250px;
+    margin-top: 6px;
+    background: linear-gradient(to Bottom,rgba(0, 0, 0, 0.596),rgba(0, 255, 255, 0.856));
+    z-index: 2;
+}

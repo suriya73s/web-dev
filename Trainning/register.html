@@ -1,87 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body bgcolor="#ccc">
+
+<style>
+    *
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    div
+    {   display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        width: 80%;
+        margin: 50px auto;
+    }
+    img
+    {
+        width: 400px;
+    }
+    p
+    {
+        
+        background-color: red;
+        display: flex;
+    }
+    @media screen and (max-width:600px) {
+    div
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    img
+    {
+        width: 300px;
+        height: 200px;
+    }
+    }
+</style>
+
+<body>
     
+    <div>
+        <img src="car.png" alt="">
        
-            
-                <h1>Register form</h1>
-                <form action="">
-                    <table>
-                        <tr>
-                            <td>Name</td><td><Input type="text" id="name" placeholder="Enter Name"></td>
-                        </tr>
-                        <tr>
-                            <td>Age</td><td><Input type="number" id="age" placeholder="Enter Age"></td>
-                        </tr>
-                        <tr>
-                            <td>Gender</td><td><Input type="radio" value="male" name="gender"><label>Male</label><Input type="radio" name="gender"><label>Feamle</label></td>
-                        </tr>
-                        <tr>
-                            <td>Select a Course</td>
-                            <td>
-                            <select name="" id="course">
-                                <option value="">Full stack</option>
-                                <option value="">Pyhton</option>
-                                 <option value="">Java</option>
-                            </select>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <tr>
-                                <td></td><button>save</button>
-                            </tr>
-                        </tr>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore sit id, adipisci quis sunt suscipit, iste quo fugiat consectetur expedita mollitia, voluptatibus quidem laboriosam dolor ipsam ut modi voluptatum ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates earum sed ipsum ea! Magnam doloribus excepturi vel modi ad, voluptatibus provident corporis earum alias sed iure optio cumque. Ducimus eius quas illum rerum maiores eos velit minus quibusdam placeat, consequuntur, aperiam fugiat, aspernatur ab excepturi tempora doloremque explicabo sed.</p>
+       
+        </div>
 
-                    </table>
-                </form>
-                <br>
-                <br>
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Gender</th>
-                        <th>Course</th>
-                    </tr>
-                </table>
-
-                <script>
-                    var name = document.getElementById("name")
-                    var age = document.getElementById("age")
-                    var course = document.getElementById("course")
-function fun()
-{
-                //     var gender = document.getElementsByName("gender")
-                //     var selectgender;
-                //     for(let i = 0; i < gender.length; i++)
-                // {
-                //     if (gender[i].checked == true)
-                //      {
-                //         selectgender = gender[i].value;
-                //        console.log(selectgender)  
-                //        break;  
-                //     }
-                // }
-                console.log("selectgender")  
-
-                
-    //   var newtd1 = document.createElement("td")
-    //   var newtd2 = document.createElement("td")
-    //   var newtd3 = document.createElement("td")
-    //   var newtd4 = document.createElement("td")
-    //   newtd1.textContent = name.value;
-    //   newtd2.textContent = age.value;
-    //   newtd3.textContent = selectgender;
-    //   newtr4.textContent = course.value;
-
-    //   newtr.innerHTML = "newtd1,newtd2,newtd3,newtd4"
-}
-
-                </script>
-                
 </body>
 </html>

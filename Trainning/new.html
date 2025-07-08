@@ -4,49 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="car.png">
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<style>
-    *
-    {
-        background-color: #ccc;
-    }
-   input 
-    {
-      
-       
-    }
-</style>
-
 <body>
-    <div class="col-sm-4">
-        <h4>Enter the value to add</h4>
-        <input type="text" name="" value="" maxlength="10" id="input_value">
-        <button>Add</button>
-    </div>
-    <div class="col-sm-4">
-        <h4>added list</h4>
-        <div class="list-ad">
-               <input type="checkbox" value="Java"><label>Java</label>
+    <div class="navbar">
+                <ul>
+                    <li>Home</li>
+                    <li>Contact</li>
+                    <li>menu</li>
+                    <li>Settings</li>
+                </ul>
         </div>
-    </div>
-    <div class="col-sm-4">
-        <h4>Selected list</h4>
-        <ul class="selected-list">
-            <li>java</li>
-        </ul>
-    </div>
-
-    <script>
-        var input = document.getElementById("input_value")
-        var list = document.querySelector(".list");
-        var selected = document.querySelector(".selected-list")
-
-        function addfun()
-        {
+    <!-- <section id="home">
+        
+        <div>
+                <h1 class="logo">Car Logo</h1>
+            </div>
+        <div class="content">
+            <h1>Cark park</h1>
+            <p>Remote control car is my dream</p>
             
-        }
-    </script>
+        </div>
+        <div class="home-but">
+                <button><span></span>Read</button>
+                 <button><span></span>Write</button>
+            </div>
+    </section> -->
+    <div>
 
+    </div>
+    <div></div>
+    <section>
+        <div id="sidenav">
+             <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">menu</a></li>
+            </ul>
+        </nav>
+        </div>
+       
+        <div onclick="menuclick()" class="menu-but">
+            <button>=</button>
+        </div>
+       
+    </section>
+
+    <!-- <section>
+
+        <div class="title-topic">
+            <h3>Features</<h3>
+            <h1>Why we choose</h1>
+        </div>
+
+        <div class="feature-box">
+            <div class="feature">  
+                <h1>my Services</h1>
+
+                <div class="feature-des">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, consectetur. dolor, sit amet consectetur adipisicing elit. Sapiente, voluptates!</p>
+                    </div>
+                </div>
+                 <h1>my Services</h1>
+
+                <div class="feature-des">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, consectetur. dolor, sit amet consectetur adipisicing elit. Sapiente, voluptates!</p>
+                    </div>
+                </div>
+                 <h1>my Services</h1>
+
+                <div class="feature-des">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, consectetur. dolor, sit amet consectetur adipisicing elit. Sapiente, voluptates!</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="feature-img">
+                <img src="mage.jpg" alt="">
+            </div>
+        </div>
+
+    </section> -->
+
+    <section id="service">
+         <div class="title-topic">
+            <h3>Features </h3>
+            <h1>Why we choose</h1>
+        </div>
+
+        <div class="service-container">
+            <div class="ser-box">
+                <img src="img.png" alt="">
+                <span></span>
+            </div>
+            <div class="ser-box">
+                <img src="img.png" alt="">
+                <span></span>
+            </div>
+            <div class="ser-box">
+                <img src="img.png" alt="">
+                <span></span>
+            </div>
+            <div class="ser-box">
+                <img src="img.png" alt="">
+                <span></span>
+            </div>
+        </div>
+
+    </section>
+
+<script>
+    var sidenavs = document.getElementById("sidenav");
+
+    sidenavs.style.right = "-250px"; // Fix: use = for assignment
+
+    function menuclick() {
+        if (sidenavs.style.right === "-250px") {
+           
+            sidenavs.style.right = "0px"; // Fix: use = for assignment
+        } else {
+            sidenavs.style.right = "-250px"; // Fix: use = for assignment
+        }
+    }
+</script>
 </body>
 </html>
